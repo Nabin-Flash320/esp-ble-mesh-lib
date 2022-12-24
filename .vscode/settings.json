@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "esp_bt.h": "c",
+        "mesh_common.h": "c",
+        "mesh_byteorder.h": "c",
+        "foundation.h": "c",
+        "mesh_trace.h": "c",
+        "esp_ble_mesh_networking_api.h": "c",
+        "esp_ble_mesh_defs.h": "c",
+        "proxy_server.h": "c",
+        "mesh_config.h": "c",
+        "net.h": "c",
+        "mesh_bearer_adapt.h": "c",
+        "provisioner_main.h": "c",
+        "mesh.h": "c"
+    }
+}
