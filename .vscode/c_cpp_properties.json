@@ -5,7 +5,8 @@
             "includePath": [
                 "${HOME}/esp/esp-idf/components/**",
                 "${HOME}/esp/esp-idf/examples/common_components/**",
-                "${HOME}/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init/**"
+                "${HOME}/esp/esp-idf/examples/bluetooth/esp_ble_mesh/common_components/example_init/**",
+                "${workspaceFolder}/components/**"
             ]
         }
     ],
