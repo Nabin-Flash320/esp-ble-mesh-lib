@@ -670,6 +670,13 @@
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/__idf_ble-mesh-lib.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/edit_cache.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/rebuild_cache.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/list_install_components.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/install.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/install/local.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/CMakeFiles/install/strip.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
@@ -677,3 +684,10 @@
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/install.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/CMakeFiles/install/strip.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/__idf_trace.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/edit_cache.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/rebuild_cache.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/list_install_components.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/install.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/install/local.dir
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/CMakeFiles/install/strip.dir

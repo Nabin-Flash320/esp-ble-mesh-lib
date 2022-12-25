@@ -121,7 +121,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/tinyusb/cmake_install.cmake")
   include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ulp/cmake_install.cmake")
   include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/wifi_provisioning/cmake_install.cmake")
+  include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/cmake_install.cmake")
   include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/cmake_install.cmake")
+  include("/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/cmake_install.cmake")
 
 endif()
 

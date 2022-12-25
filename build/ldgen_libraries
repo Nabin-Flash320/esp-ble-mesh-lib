@@ -70,4 +70,6 @@
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/spiffs/libspiffs.a
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ulp/libulp.a
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/ble-mesh-lib/libble-mesh-lib.a
 /home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/main/libmain.a
+/home/ndj320/Programs/c-workspace/esp-ble-mesh-lib/build/esp-idf/trace/libtrace.a

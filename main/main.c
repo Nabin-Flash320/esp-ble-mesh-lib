@@ -21,23 +21,24 @@
 #include "esp_ble_mesh_sensor_model_api.h"
 #include "esp_ble_mesh_local_data_operation_api.h"
 
+#include "ble_mesh_definitions.h"
+#include "ble_mesh_op_code.h"
 
-#define TAG                                             "CUSTOM MODEL"
-#define CID_ESP                                         0x02E5
-#define ESP_BLE_CUSTOM_SERVER_ID                        0x0001
-#define PROPERTY_ID                                     0x0056
 
-// Custom OP code definitions
-#define ESP_BLE_MESH_MODEL_OP_APP_GET                   ESP_BLE_MESH_MODEL_OP_3(0x00, CID_ESP)
-#define ESP_BLE_MESH_MODEL_OP_APP_SET                   ESP_BLE_MESH_MODEL_OP_3(0x01, CID_ESP)
-#define ESP_BLE_MESH_MODEL_OP_APP_STATUS                ESP_BLE_MESH_MODEL_OP_3(0x02, CID_ESP)
 
 // OP code definition to the custom model
+// static esp_ble_mesh_model_op_t custom_op_code[] = {
+//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_GET, 0),
+//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_SET, 1),
+//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2),
+//     ESP_BLE_MESH_MODEL_OP_END,
+// };
+
 static esp_ble_mesh_model_op_t custom_op_code[] = {
-    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_GET, 0),
-    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_SET, 1),
-    ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2),
-    ESP_BLE_MESH_MODEL_OP_END,
+    BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_GET, 0, (uint32_t)NULL),
+    BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_SET, 1, (uint32_t)NULL),
+    BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2, (uint32_t)NULL),
+    {0, 0, 0},
 };
 
 const char* NAME = "CUSTOM_MODEL";
@@ -85,7 +86,7 @@ static esp_ble_mesh_model_t root_models[] = {
 ESP_BLE_MESH_MODEL_PUB_DEFINE(custom_srv_pub, 20, ROLE_NODE);
 // Creating a mesh model using vendoro instance
 static esp_ble_mesh_model_t custom_models[] = {
-    ESP_BLE_MESH_VENDOR_MODEL(CID_ESP, 
+    ESP_BLE_MESH_VENDOR_MODEL(ESP_CID, 
                                 ESP_BLE_CUSTOM_SERVER_ID, 
                                 custom_op_code, 
                                 &custom_srv_pub, 
@@ -100,7 +101,7 @@ static esp_ble_mesh_elem_t elements[] = {
 };
 
 static esp_ble_mesh_comp_t composition = {
-    .cid = CID_ESP,
+    .cid = ESP_CID,
     .elements = elements,
     .element_count = ARRAY_SIZE(elements),
 };
