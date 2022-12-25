@@ -23,17 +23,11 @@
 
 #include "ble_mesh_definitions.h"
 #include "ble_mesh_op_code.h"
+#include "ble_mesh_model.h"
 
 
 
 // OP code definition to the custom model
-// static esp_ble_mesh_model_op_t custom_op_code[] = {
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_GET, 0),
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_SET, 1),
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2),
-//     ESP_BLE_MESH_MODEL_OP_END,
-// };
-
 static esp_ble_mesh_model_op_t custom_op_code[] = {
     BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_GET, 0, (uint32_t)NULL),
     BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_SET, 1, (uint32_t)NULL),
@@ -79,14 +73,14 @@ static esp_ble_mesh_cfg_srv_t config_server = {
 
 // Configuration model definition.
 static esp_ble_mesh_model_t root_models[] = {
-    ESP_BLE_MESH_MODEL_CFG_SRV(&config_server),
+    BLE_MESH_CONFIG_SERVER_MODEL_CREATE(&config_server),
 };
 
 // Definition of model publication instance.
-ESP_BLE_MESH_MODEL_PUB_DEFINE(custom_srv_pub, 20, ROLE_NODE);
+BLE_MESH_MODEL_DEFINE_PUBLICATION(custom_srv_pub, 20, ROLE_NODE, (uint32_t)NULL);
 // Creating a mesh model using vendoro instance
 static esp_ble_mesh_model_t custom_models[] = {
-    ESP_BLE_MESH_VENDOR_MODEL(ESP_CID, 
+    BLE_MESH_CUSTOM_MODEL_CREATE(ESP_CID, 
                                 ESP_BLE_CUSTOM_SERVER_ID, 
                                 custom_op_code, 
                                 &custom_srv_pub, 

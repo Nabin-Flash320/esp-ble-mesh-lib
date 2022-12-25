@@ -12,6 +12,9 @@
         "net.h": "c",
         "mesh_bearer_adapt.h": "c",
         "provisioner_main.h": "c",
-        "mesh.h": "c"
+        "mesh.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c"
     }
 }
