@@ -4,27 +4,12 @@
 #include "ble_mesh_definitions.h"
 
 
-// esp_ble_mesh_model_op_t* ble_mesh_get_op_code()
-// {
-//     esp_ble_mesh_model_op_t led_model_op_code[] = {
-//         {
-//             .opcode = ESP_BLE_MESH_MODEL_OP_APP_GET,
-//             .min_len = 0,
-//             .param_cb = (uint32_t)NULL,
-//         },
-//         {
-//             .opcode = ESP_BLE_MESH_MODEL_OP_APP_SET,
-//             .min_len = 1,
-//             .param_cb = (uint32_t)NULL,
-//         },
-//         {
-//             .opcode = ESP_BLE_MESH_MODEL_OP_APP_STATUS,
-//             .min_len = 0,
-//             .param_cb = (uint32_t)NULL,
-//         }
-//     };
-
-//     return led_model_op_code;
-// }
-
-
+esp_ble_mesh_model_op_t ble_mesh_get_op_code(const uint32_t op_code, const size_t min_len, uint32_t param_cb)
+{
+    esp_ble_mesh_model_op_t mesh_op_code = {
+        .opcode = op_code,
+        .min_len = min_len,
+        .param_cb = param_cb,
+    };
+    return mesh_op_code;
+}

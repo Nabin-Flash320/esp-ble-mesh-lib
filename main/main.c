@@ -25,21 +25,14 @@
 #include "ble_mesh_op_code.h"
 
 
-
 // OP code definition to the custom model
-// static esp_ble_mesh_model_op_t custom_op_code[] = {
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_GET, 0),
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_SET, 1),
-//     ESP_BLE_MESH_MODEL_OP(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2),
-//     ESP_BLE_MESH_MODEL_OP_END,
-// };
-
 static esp_ble_mesh_model_op_t custom_op_code[] = {
     BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_GET, 0, (uint32_t)NULL),
     BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_SET, 1, (uint32_t)NULL),
     BLE_MESH_GET_OP_CODE(ESP_BLE_MESH_MODEL_OP_APP_STATUS, 2, (uint32_t)NULL),
     {0, 0, 0},
 };
+
 
 const char* NAME = "CUSTOM_MODEL";
 static uint8_t custom_uuid[16] = {0xdd, 0xdd};

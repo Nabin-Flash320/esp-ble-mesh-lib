@@ -14,5 +14,7 @@
 }
 
 
+esp_ble_mesh_model_op_t ble_mesh_get_op_code(const uint32_t opcode, const size_t min_len, uint32_t param_cb);
+
 #endif //_BLE_MESH_OP_CODE_H_
 
